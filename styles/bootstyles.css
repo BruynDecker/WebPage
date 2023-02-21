@@ -1,0 +1,68 @@
+body {
+    background-color: #F2CA7E;
+    margin: 0px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header{
+    margin:0px;
+    top: 0px;
+    height: 500px;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    background-image: url(../images/Data.jpg);
+}
+
+.header a {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    top: 10px;
+}
+
+.header a:hover {
+    color: grey;
+    font-size: 35px;
+}
+
+.header h2 {
+    text-align: center;
+    font-size: 64px;
+    color: white;
+    padding: 125px;
+}
+
+.mainbody{
+    padding: 50px;
+    right:5px;
+    left:5px;
+    top:300px;
+    bottom:65px;
+}
+
+.mainbody h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.tableau{
+    margin-right: 10px;
+    width: 300px;
+}
+
+.tableau2{
+    margin-right: 10px;
+    width: 400px;
+}
+
+.footer{
+    padding:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color:rgb(94, 92, 92);
+    top: 50px;
+    height: 60px;
+}
