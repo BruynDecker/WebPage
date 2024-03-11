@@ -37,3 +37,16 @@ iframe {
     margin-right:auto;
     display: block;
 }
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between images */
+    margin-bottom: 20px; /* Space below the image row */
+  }
+  
+  .small-project-image {
+    width: auto; /* Adjust width as necessary, could be a percentage like 30% for equal size */
+    height: 200px; /* Adjust height as needed to keep images small */
+    object-fit: cover; /* Keeps the aspect ratio while covering the set width/height */
+  }
