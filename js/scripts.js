@@ -3,6 +3,24 @@
 * Copyright 2013-2021 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
 */
+
+function toggleReadMore(element) {
+    // Find the closest parent with the class 'project-description'
+    const projectDescription = element.closest('.project-description');
+    // Within this parent, find the '.more-text' div
+    const moreText = projectDescription.querySelector('.more-text');
+
+    // Check if '.more-text' is visible
+    if (moreText.style.display === "none" || moreText.style.display === "") {
+        moreText.style.display = "block"; // Show the '.more-text' content
+        element.textContent = "Read Less";
+    } else {
+        moreText.style.display = "none"; // Hide the '.more-text' content
+        element.textContent = "Read More";
+    }
+}
+
+
 window.addEventListener('DOMContentLoaded', () => {
     let scrollPos = 0;
     const mainNav = document.getElementById('mainNav');

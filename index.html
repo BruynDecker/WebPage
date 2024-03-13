@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="styles/styles.css" rel="stylesheet" />
+        <!----><link href="styles/styles.css" rel="stylesheet" />
         <link rel='stylesheet' type="text/css" href="styles/myStyles.css"/>
         <link rel='stylesheet' type="text/css" href="styles/compactstyles.css"/>
     </head>
@@ -31,6 +31,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 navbarmodified" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 navbarmodified" href="#projects">Projects</a></li>
+
                         <!--<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 navbarmodified" href="docs\Resume Bruyn Decker September 2023 Data Analytics.pdf">Résumé</a></li>-->
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 navbarmodified" href="https://www.linkedin.com/in/bruyn-decker-873227208">LinkedIN</a></li>
                         <!--<li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 navbarmodified" href="html/about.html">About</a></li>
@@ -40,8 +42,8 @@
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" alt="Egytpian Pyramids" style="background-image: url('images/pyramids.jpg')">
-            <div class="container position-relative px-4 px-lg-5">
+        <header class="masthead" alt="Egytpian Pyramids" style="background-image: url('https://pbs.twimg.com/media/C2lP_z0VEAMnr3X.jpg')">
+           <!-- <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="site-heading">
@@ -50,7 +52,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
         </header>
         <!-- Main Content-->
         <div class="container px-2 px-lg-3">
@@ -66,47 +68,110 @@
                     <p>When I'm not immersed in coding or tackling data analytics puzzles, you can find me indulging in my love for fitness, hiking, baseball, and movies. I believe in a balanced lifestyle where outdoor adventures meet creative pursuits like writing and design, allowing me to channel my energies productively.</p>
                     <!--<p><a href="docs\Resume Bruyn Decker September 2023 Data Analytics.pdf">View my resume here</a></p>-->
                     <br>
-                    <h1>Projects I've worked on</h1>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <h1 id="projects">Projects I've worked on</h1>
                     <br>
-                    <h4>AI-Illustrated Novel</h4>
-                    <div class="image-row">
-                        <img src="images/DALL·E 2023-12-09 05.37.42 - The picture fades into a dark color_Nero AI_Photo_x4 with title cropped.png" alt="book cover" class="small-project-image">
-                        <img src="images/image (5).png" alt="book illustration" class="small-project-image">
-                        <img src="images/image (6).png" alt="book illustration" class="small-project-image">
+                    <div class="project-description">
+                        <h4>AI-Illustrated Novel</h4>
+                        <div class="image-row">
+                            <img src="images/DALL·E 2023-12-09 05.37.42 - The picture fades into a dark color_Nero AI_Photo_x4 with title cropped.png" alt="book cover" class="small-project-image">
+                            <img src="images/image (5).png" alt="book illustration" class="small-project-image">
+                            <img src="images/image (6).png" alt="book illustration" class="small-project-image">
+                        </div>
+                        <p>In a fusion of literature and cutting-edge technology, I embarked on a personal project to breathe visual life into a novel I had penned.</p>
+                        <div class="more-text">
+                            <p>Leveraging the power of AI, both through language models and image generation tools, I crafted a workflow that transformed my written words into a visually stunning, professionally level book.</p>
+                            <p>This project wasn't just about creating illustrations; it was an exploration into the synergy between human creativity and artificial intelligence. I delved into the realms of graphic design, utilizing AI text-based tools to understand and visualize the essence of my narrative. Following this, AI-based image generation tools were employed to create artwork that not only complemented but also deepened the reader's engagement with the story.</p>
+                            <p>The endeavor highlighted my ability to harness LLMs (Large Language Models) and AI image generators in novel ways, pushing the boundaries of traditional storytelling. It was a journey that showcased my skills in raw creativity, graphic design, and my adeptness at integrating complex technologies to achieve a singular, artistic vision.</p>
+                            <p>This project stands as a testament to the innovative use of technology in enhancing and redefining the creative process, offering a glimpse into the potential futures of digital storytelling and publishing.</p>
+                        </div>
+                        <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+
+
+                    </div>
+                    <br>
+                        <div class="project-description">
+                        <h4>Amazon Web Services Project</h4>
+                        <p>This school project tasked us with creating a web application capable of listing a diverse range of items - from donuts to favorite video game characters - all dynamically pulled from a database. The challenge was to envision an application that could scale to meet the needs of 31,000 retail locations, each with its unique inventory needs.</p>
+                        <div class="more-text">
+
+                        <p>Our approach involved a deep dive into cloud computing and microservices architecture, leveraging Docker for containerization to ensure scalability and ease of updates. We utilized AWS Fargate for running our containers, ensuring our application could handle the demands of a potentially vast retail network without direct server management.</p>
+                        <p>For our database solution, we opted for Amazon RDS, allowing us to manage data effectively and scale our storage capabilities as needed. Additionally, we explored the use of DynamoDB for its NoSQL benefits, enhancing our application's performance and scalability.</p>
+                        <p>To ensure the application's infrastructure was robust and maintainable, we adopted Infrastructure as Code practices, creating a system that could be easily updated and scaled. The use of AWS CloudFormation and CodePipeline further streamlined our deployment and update processes, ensuring our application could evolve smoothly alongside the business needs.</p>
+                        <p>Understanding the importance of user experience, we hosted our web assets in an S3 bucket with CloudFront distribution, significantly improving the application's load times and reliability for users worldwide. The implementation of API Gateway also facilitated a microservices architecture, enabling efficient data retrieval and manipulation.</p>
+                        <p>This project not only showcased our technical prowess but also our ability to think strategically about the future of e-commerce platforms. It reinforced our understanding of cloud-based architectures, containerization, and the critical importance of scalability and maintainability in software development.</p>
+                        </div>
+                        <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+
                     </div>
 
-                    <p>In a fusion of literature and cutting-edge technology, I embarked on a personal project to breathe visual life into a novel I had penned. Leveraging the power of AI, both through language models and image generation tools, I crafted a workflow that transformed my written words into a visually stunning, professionally level book.</p>
-                    <p>This project wasn't just about creating illustrations; it was an exploration into the synergy between human creativity and artificial intelligence. I delved into the realms of graphic design, utilizing AI text-based tools to understand and visualize the essence of my narrative. Following this, AI-based image generation tools were employed to create artwork that not only complemented but also deepened the reader's engagement with the story.</p>
-                    <p>The endeavor highlighted my ability to harness LLMs (Large Language Models) and AI image generators in novel ways, pushing the boundaries of traditional storytelling. It was a journey that showcased my skills in raw creativity, graphic design, and my adeptness at integrating complex technologies to achieve a singular, artistic vision.</p>
-                    <p>This project stands as a testament to the innovative use of technology in enhancing and redefining the creative process, offering a glimpse into the potential futures of digital storytelling and publishing.</p>
                     <br>
-                    <h4>Amazon Web Services Project</h4>
-                    <p>This school project tasked us with creating a web application capable of listing a diverse range of items - from donuts to favorite video game characters - all dynamically pulled from a database. The challenge was to envision an application that could scale to meet the needs of 31,000 retail locations, each with its unique inventory needs.</p>
-                    <p>Our approach involved a deep dive into cloud computing and microservices architecture, leveraging Docker for containerization to ensure scalability and ease of updates. We utilized AWS Fargate for running our containers, ensuring our application could handle the demands of a potentially vast retail network without direct server management.</p>
-                    <p>For our database solution, we opted for Amazon RDS, allowing us to manage data effectively and scale our storage capabilities as needed. Additionally, we explored the use of DynamoDB for its NoSQL benefits, enhancing our application's performance and scalability.</p>
-                    <p>To ensure the application's infrastructure was robust and maintainable, we adopted Infrastructure as Code practices, creating a system that could be easily updated and scaled. The use of AWS CloudFormation and CodePipeline further streamlined our deployment and update processes, ensuring our application could evolve smoothly alongside the business needs.</p>
-                    <p>Understanding the importance of user experience, we hosted our web assets in an S3 bucket with CloudFront distribution, significantly improving the application's load times and reliability for users worldwide. The implementation of API Gateway also facilitated a microservices architecture, enabling efficient data retrieval and manipulation.</p>
-                    <p>This project not only showcased our technical prowess but also our ability to think strategically about the future of e-commerce platforms. It reinforced our understanding of cloud-based architectures, containerization, and the critical importance of scalability and maintainability in software development.</p>
+                    <div class="project-description">
+                        <h4>Agreement Periods Admin Project</h4>
+                        <p>As a Full-stack C# Developer at BYU Campus Accommodations in Provo, UT I enabled the transition of systems from Visual Basic to a modern tech stack involving ASP.NET, Entity Framework, and Oracle SQL.  <i>This helped drive $40 Million dollars in annual revenue collected by Campus Accommodations.</i></p>
+                        <div class="more-text">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fQpREfUOpp0?si=uviNcfXLWUWzHbOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    
+                            <p>The main project I worked on as part of this as a solo developer was an app in which I developed a web application for admin use, demonstrated in the video above.  This project comprised over 6000 lines of code.</p>
+                        </div>
+                        <button onclick="toggleReadMore(this)" class="read-more-btn">See More</button>
+                    </div>
+
                     <br>
-                    <h4></h4>
-                    <h4>Agreement Periods Admin Project</h4>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fQpREfUOpp0?si=uviNcfXLWUWzHbOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                    <p>As a Full-stack C# Developer at BYU Campus Accommodations in Provo, UT, from May 2023 to September 2023, I spearheaded the transition of systems from Visual Basic to a modern tech stack involving ASP.NET, Entity Framework, and Oracle SQL.  <i>This helped drive $40 Million dollars in annual revenue collected by Campus Accommodations.</i></p>
-                    <p>The main project I worked on as part of this as a solo developer was an app in which I developed a web application for admin use, demonstrated in the video above.  This project comprised over 6000 lines of code.</p>
+                    <div class="project-description">
+                        <h4>INTEX 2023</h4>
+                        <p  style="text-align:center;"><a href="docs/4-13 (6).pdf">Our full report</a> | <a href="https://github.com/SinistralMars/Fag_el-Gamous">Link to our code repository</a></p>
+                        <p>Our team successfully conducted an in-depth statistical analysis of Ancient Egyptian gravesite data, employing advanced analytical techniques to derive valuable insights.</p>
+                        <div class="more-text">
+
+                        <p>We designed and developed a secure and user-friendly website that served as a hub for the data collected. This platform enabled researchers and the public to access, filter, and interact with the data, enhancing its accessibility and usability.</p>
+                        <p>Utilizing our expertise, we implemented a robust authentication system that allowed authenticated researchers to contribute new findings, as well as edit and delete existing records on the website.</p>
+                        <p>One of our key achievements was the development of a dynamic Burial Summary page, which allowed users to view mummy information in a digestible format. The page supported filtering on up to 10 columns, meeting the specific requirements outlined by the client.</p>
+                        <p>In addition to data organization and website development, our project featured advanced analytical components. We employed both supervised and unsupervised analysis techniques. Our "supervised" analysis resulted in a model capable of predicting mummy sex based on burial characteristics. Meanwhile, the "unsupervised" analysis revealed statistically significant correlations within the dataset.</p>
+                        <p>INTEX 2023 showcased our ability to leverage cutting-edge technologies, including .NET programming, PostgreSQL, Amazon Web Services, and data visualization tools. Our achievements in this project stand as a testament to our expertise in data analytics, web development, and technical problem-solving.</p>
+                        </div>
+                        <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                    </div>
+
                     <br>
-                    <h4></h4>
-                    <h4>INTEX 2023</h4>
-                    <p  style="text-align:center;"><a href="docs/4-13 (6).pdf">Our full report</a> | <a href="https://github.com/SinistralMars/Fag_el-Gamous">Link to our code repository</a></p>
-                    <p>Our team successfully conducted an in-depth statistical analysis of Ancient Egyptian gravesite data, employing advanced analytical techniques to derive valuable insights.</p>
-                    <p>We designed and developed a secure and user-friendly website that served as a hub for the data collected. This platform enabled researchers and the public to access, filter, and interact with the data, enhancing its accessibility and usability.</p>
-                    <p>Utilizing our expertise, we implemented a robust authentication system that allowed authenticated researchers to contribute new findings, as well as edit and delete existing records on the website.</p>
-                    <p>One of our key achievements was the development of a dynamic Burial Summary page, which allowed users to view mummy information in a digestible format. The page supported filtering on up to 10 columns, meeting the specific requirements outlined by the client.</p>
-                    <p>In addition to data organization and website development, our project featured advanced analytical components. We employed both supervised and unsupervised analysis techniques. Our "supervised" analysis resulted in a model capable of predicting mummy sex based on burial characteristics. Meanwhile, the "unsupervised" analysis revealed statistically significant correlations within the dataset.</p>
-                    <p>INTEX 2023 showcased our ability to leverage cutting-edge technologies, including .NET programming, PostgreSQL, Amazon Web Services, and data visualization tools. Our achievements in this project stand as a testament to our expertise in data analytics, web development, and technical problem-solving.</p>
-                    <br>
-                    <h4>INTEX 2022</h4>
-                    <p  style="text-align:center;"><a href="docs\Intex'22 Report.pdf">Our full report</a> | <a href="https://github.com/nbain00/kidneyproject">Link to our code repository</a></p>
-                    <p>Was part of a team in which we designed a relational database, deployed it using Django and PostgreSQL, and visualized the data dynamically on a webpage to help kidney patients track health information.</p>
-                    <p style="text-align:center;"><img src = "images/Daily Food Journal.png" alt = "website view" position="justify-content-center"><img src = "images/Screenshot_20230221_121913.png" alt = "website view" position="justify-content-center" width="400px"></p>
+                    <div class="project-description">
+                        <h4>INTEX 2022</h4>
+                        <p  style="text-align:center;"><a href="docs\Intex'22 Report.pdf">Our full report</a> | <a href="https://github.com/nbain00/kidneyproject">Link to our code repository</a></p>
+                        <p>Was part of a team in which we designed a relational database, deployed it using Django and PostgreSQL, and visualized the data dynamically on a webpage to help kidney patients track health information.</p>
+                        <div class="more-text">
+                        <p style="text-align:center;"><img src = "images/Daily Food Journal.png" alt = "website view" position="justify-content-center"><img src = "images/Screenshot_20230221_121913.png" alt = "website view" position="justify-content-center" width="400px"></p>
+                    </div>
+                    <button onclick="toggleReadMore(this)" class="read-more-btn">See More</button>
+
+                    </div>
+
                     <br>
                     <h4>SAnD 2022 (Systems Analysis and Design)</h4>
                     <p style="text-align:center;"><a href="docs\401_ SAnD Report.pdf">Our full report</a></p>

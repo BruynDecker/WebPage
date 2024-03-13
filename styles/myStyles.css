@@ -1,23 +1,70 @@
+/*THis is for my read less and more divs */
+
+.more-text {
+    display: none;
+}
+
+.read-more-btn {
+    background: none; /* Remove background */
+    color: #fbf9ea; /* Link-like text color */
+    padding: 0; /* Remove padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change mouse cursor to indicate clickable */
+    text-decoration: underline; /* Underline to mimic link appearance */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Consistent font style */
+    font-size: 16px; /* Adjust to match your site's link size */
+    outline: none; /* Remove focus outline for a cleaner look */
+}
+
+.read-more-btn:hover, .read-more-btn:focus {
+    color: #fbf9ea; /* Darker shade for hover state to mimic link behavior */
+    text-decoration: underline; /* Optional: remove underline on hover for a dynamic effect */
+}
+
+
+/*main stuff for the body*/
 body {
-    background-color: #F2CA7E;
+    background-color: #1E1E1E; /* A darker, more neutral background for a sophisticated and modern look */
+    color: #E0E0E0; /* Light text color for contrast and readability */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Switching to a more modern, sans-serif font for body text */
 }
 
-.navbarmodified {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.navbar {
+    font-family: 'Roboto', sans-serif; /* Roboto is versatile and modern, with a clean appearance */
+    background-color: #333333; /* A darker shade for the navbar to contrast with the body */
+    padding: 0.5rem;
+    text-transform: uppercase; /* Adding a touch of masculinity with uppercase letters */
+    letter-spacing: 0.1em; /* Slightly more spacing to add to the modern and chic feel */
 }
 
-h2{
-    color: #401801;
-}
-
-h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 800;
+    font-family: 'Montserrat', sans-serif; /* Montserrat is bold and modern, fitting the chic, masculine vibe */
+    font-weight: 700; /* Bold but not overly so, keeping text readable */
     line-height: 1.2;
     text-align: center;
-  }
+    color: #F2F2F2; /* A light shade for headings to stand out against the darker background */
+}
+
+h2 {
+    color: #F2F2F2; /* Updated color for better contrast and consistency with other headings */
+}
+
+/* Adjusting navbar items for a cleaner, modern look */
+.nav-item {
+    margin-right: 1rem; /* Spacing out navbar items */
+}
+
+.nav-link {
+    color: #E0E0E0; /* Light color for readability */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-link:hover {
+    color: #FFFFFF; /* Brighter shade on hover for a dynamic, interactive feel */
+}
+
 
 .CenteredText {
     text-align: center;
