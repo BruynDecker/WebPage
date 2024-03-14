@@ -4,6 +4,7 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
 */
 
+
 function toggleReadMore(element) {
     // Find the closest parent with the class 'project-description'
     const projectDescription = element.closest('.project-description');
