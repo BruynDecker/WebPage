@@ -7,16 +7,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>iStyle - AI-Powered Clothing Recommendations</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Roboto Slab -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Oswald -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Merriweather -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bebas Neue -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
         /* Pastel-themed background and typography for a fashion brand */
         body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f7f1e3;
-        }
+    font-family: 'Lato', sans-serif;
+    background-color: #6FDBF8;
+}
 
         /* Navbar styling with a soft pink background */
         .navbar {
-            background-color: #f8a5c2;
+            background-color: #FEF9FB;
         }
 
         .navbar-brand {
@@ -27,22 +40,22 @@
 
         /* Styling the logo in the navbar */
         .navbar-brand img {
-            max-height: 40px;
-            margin-right: 10px;
+            max-height: 175px;
+            /*margin-right: 231px;*/
         }
 
         /* Header section with soft colors and clean typography */
         .header {
-            padding: 100px 0;
+            padding: 40px 0; /* Reduced from 100px to 50px */
             text-align: center;
-            background-color: #f7f1e3;
+            background-color: #FEF9FB;
         }
 
         .header h1 {
-            font-size: 3.5rem;
-            color: #2d3436;
-            font-weight: bold;
-        }
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 2rem; /* Adjust size as needed */
+    color: #d78093;
+}
 
         .header p {
             font-size: 1.25rem;
@@ -54,11 +67,13 @@
             width: 300px;
             height: auto;
             margin-top: 20px;
+            border-radius: 15px; /* Optional: Adds slight rounding to the edges */
+            box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1); /* Creates the fuzzy border */
         }
 
         /* Button customization with a pastel purple color */
         .btn-custom {
-            background-color: #a29bfe;
+            background-color: #d78093;
             color: white;
             border-radius: 30px;
             font-size: 1.1rem;
@@ -66,37 +81,46 @@
         }
 
         .btn-custom:hover {
-            background-color: #6c5ce7;
+            background-color: #cd526d;
         }
 
         /* Features section with light and airy styling */
+        /* Features section with light and airy styling */
         .features-section {
             padding: 50px 0;
-            background-color: #dfe6e9;
+            background-color: #d78093; /* Medium pink background */
         }
 
         .features-section h2 {
             text-align: center;
-            color: #2d3436;
+            color: #ffffff; /* White text for better contrast */
             margin-bottom: 30px;
             font-weight: 600;
+            font-family: 'Roboto Slab', sans-serif;
+
         }
 
         .features-section p {
-            color: #636e72;
+            color: #f1f1f1; /* Light gray text for subheading/paragraphs */
         }
 
         /* Contact section with a soft pastel green background */
         .contact-section {
-            background-color: #81ecec;
+            background-color: #6FDBF8;
             color: #2d3436;
             padding: 50px 0;
         }
 
         .contact-section h2 {
+            font-family: 'Roboto Slab', sans-serif;
+
             text-align: center;
             margin-bottom: 30px;
             font-weight: 600;
+        }
+
+        .features-section h3 {
+            font-family: 'Roboto Slab', sans-serif;
         }
 
         .contact-section form input,
@@ -124,35 +148,40 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-            <img src="images/iStylist.png" alt="iStyle Logo"> iStyle
-        </a>
+        <div class="container d-flex justify-content-center">
+            <a class="navbar-brand" href="#">
+                <img src="/images/iStylist.png" alt="iStyle Logo" class="navbar-logo">
+            </a>
+        </div>
     </nav>
 
     <!-- Header Section -->
     <header class="header">
-        <div class="container">
-            <h1>AI-Powered Clothing Recommendations</h1>
-            <p>Discover your unique style with a personalized AI quiz. Get clothing recommendations tailored to you!</p>
-            <img src="images/Dreaming of Style.jpg" alt="Dreaming of Style" class="main-image">
+        <div class="container text-center">
+            <h1 class="header-title">AI-Powered Fashion</h1>
+            <p class="header-subtitle">Discover your unique style with a personalized quiz. Get clothing recommendations tailored to you!</p>
+            <div class="header-image-container">
+                <img src="/images/Dreaming of Style.jpg" alt="Dreaming of Style" class="main-image">
+            </div>
             <a href="#quiz" class="btn btn-custom btn-lg mt-4">Take the AI Quiz</a>
         </div>
     </header>
+    
 
     <!-- Features Section -->
     <section class="features-section">
         <div class="container">
             <h2>How it Works</h2>
             <div class="row">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center mb-4">
                     <h3>1. Take the Quiz</h3>
                     <p>Answer a few questions about your preferences, personality, and fashion taste.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center mb-4">
                     <h3>2. Get Recommendations</h3>
                     <p>Our AI analyzes your responses to provide personalized clothing suggestions.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center mb-4">
                     <h3>3. Shop Your Style</h3>
                     <p>Receive links to curated outfits and items that match your unique style.</p>
                 </div>
@@ -164,7 +193,7 @@
     <section class="contact-section">
         <div class="container">
             <h2>Contact Us</h2>
-            <p class="text-center">Interested in iStyle? Leave us a message, and we'll get back to you!</p>
+            <p class="text-center">Interested in iStylist? Leave us a message, and we'll get back to you!</p>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <form>
@@ -180,7 +209,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 iStyle. All Rights Reserved.</p>
+        <p>&copy; 2024 iStylist. All Rights Reserved.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
