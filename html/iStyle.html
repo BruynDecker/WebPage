@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iStyle - AI-Powered Clothing Recommendations</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Pastel-themed background and typography for a fashion brand */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f1e3;
+        }
+
+        /* Navbar styling with a soft pink background */
+        .navbar {
+            background-color: #f8a5c2;
+        }
+
+        .navbar-brand {
+            color: #2d3436;
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        /* Styling the logo in the navbar */
+        .navbar-brand img {
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        /* Header section with soft colors and clean typography */
+        .header {
+            padding: 100px 0;
+            text-align: center;
+            background-color: #f7f1e3;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            color: #2d3436;
+            font-weight: bold;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            color: #636e72;
+        }
+
+        /* Styling the main image */
+        .main-image {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Button customization with a pastel purple color */
+        .btn-custom {
+            background-color: #a29bfe;
+            color: white;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            padding: 10px 30px;
+        }
+
+        .btn-custom:hover {
+            background-color: #6c5ce7;
+        }
+
+        /* Features section with light and airy styling */
+        .features-section {
+            padding: 50px 0;
+            background-color: #dfe6e9;
+        }
+
+        .features-section h2 {
+            text-align: center;
+            color: #2d3436;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .features-section p {
+            color: #636e72;
+        }
+
+        /* Contact section with a soft pastel green background */
+        .contact-section {
+            background-color: #81ecec;
+            color: #2d3436;
+            padding: 50px 0;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .contact-section form input,
+        .contact-section form textarea {
+            background-color: #b2bec3;
+            color: #2d3436;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+
+        /* Footer styling with soft, muted colors */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #b2bec3;
+            color: #2d3436;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="images/iStylist.png" alt="iStyle Logo"> iStyle
+        </a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>AI-Powered Clothing Recommendations</h1>
+            <p>Discover your unique style with a personalized AI quiz. Get clothing recommendations tailored to you!</p>
+            <img src="images/Dreaming of Style.jpg" alt="Dreaming of Style" class="main-image">
+            <a href="#quiz" class="btn btn-custom btn-lg mt-4">Take the AI Quiz</a>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2>How it Works</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <h3>1. Take the Quiz</h3>
+                    <p>Answer a few questions about your preferences, personality, and fashion taste.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>2. Get Recommendations</h3>
+                    <p>Our AI analyzes your responses to provide personalized clothing suggestions.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h3>3. Shop Your Style</h3>
+                    <p>Receive links to curated outfits and items that match your unique style.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p class="text-center">Interested in iStyle? Leave us a message, and we'll get back to you!</p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                        <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-custom btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 iStyle. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
