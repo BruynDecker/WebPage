@@ -4,6 +4,19 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
 */
 
+function filterProjects(category) {
+    const projects = document.querySelectorAll('.project-description');
+
+    projects.forEach(project => {
+        if (category === 'all') {
+            project.style.display = 'block';
+        } else if (project.classList.contains(category)) {
+            project.style.display = 'block';
+        } else {
+            project.style.display = 'none';
+        }
+    });
+}
 
 function toggleReadMore(element) {
     // Find the closest parent with the class 'project-description'

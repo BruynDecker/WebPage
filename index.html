@@ -47,7 +47,7 @@
             </div>
         </nav>
         <!-- Page Header-->
-        <header class="masthead" alt="Egytpian Pyramids" style="background-image: url('https://pbs.twimg.com/media/C2lP_z0VEAMnr3X.jpg')">
+        <header class="masthead" alt="Egytpian Pyramids" style="background-image: url('images/C2lP_z0VEAMnr3X.png')">
            <!-- <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
@@ -76,9 +76,9 @@
     I believe that well-designed technology systems are the pathway to a better world.</p>
 
     <p>
-      I'm trying my best to contribute to the <i>well-designed</i> part.  To me, a big piece of that is analyzing data so you can make quality decisions.  </p>
+      I'm trying my best to contribute to the <i>well-designed</i> part.</p>
       <p>
-        Here's the <a href="#projects">living record</a> of my commitment to impactful tech.</p>
+        Here's the <a href="#projects">living record</a> of projects that prove my commitment to impactful tech.</p>
                     
                     
                     <!--<p>Hey! I'm Bruyn Decker, currently navigating the first year of my Masters in Information Systems Management at BYU's Marriott School of Business. Having journeyed across the U.S., I've embraced diverse cultures and lifestyles, igniting my curiosity and passion for the dynamic world of technology.</p>
@@ -307,7 +307,14 @@
                     <br>
                     <h3 id="projects" class="h3">Projects I've worked on</h3>
                     <br>
-                    <div class="project-description">
+                    <div class="filter-buttons">
+                      <button class="filter-btn" onclick="filterProjects('all')">All Projects</button>
+                      <button class="filter-btn" onclick="filterProjects('data-analytics')">Data Analytics</button>
+                      <button class="filter-btn" onclick="filterProjects('web-development')">Web Development</button>
+                      <button class="filter-btn" onclick="filterProjects('cybersecurity')">Cybersecurity</button>
+                  </div>
+                    <br>
+                    <div class="project-description cybersecurity data-analytics">
                       <h4>Data Analysis and Visualization: Cybersecurity Attacks</h4>
                       <p  style="text-align:center;"><a href="docs/Data_Science_Report-combined (1).pdf">Our full report</a> </p>                      
                         <p>
@@ -328,10 +335,10 @@
                       </div>
                       <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
 
+                      <br>
+                    </div>
 
-                  </div>
-                  <br>
-                    <div class="project-description">
+                    <div class="project-description cybersecurity">
                       <h4>Penetration Testing Project</h4>
                       <p  style="text-align:center;"><a href="docs/Team 3-7 Penetration Testing Report (1).pdf">Our full report</a> </p>                      
                       <p>
@@ -358,9 +365,9 @@
                       </div>
                       <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
 
-
+                      <br>
                   </div>
-                    <br>
+
                     <div class="project-description">
                         <h4>Novel-llustrating Workflow</h4>
                         <div class="image-row">
@@ -385,10 +392,10 @@
                         </div>
                         <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
 
-
+                        <br>
                     </div>
-                    <br>
-                    <div class="project-description">
+
+                    <div class="project-description web-development">
                       <h4>Amazon Web Services Project</h4>
                       <p>
                           This school project tasked us with creating a web application capable of listing a diverse range of items—from donuts to favorite video game characters—all dynamically pulled from a database. The challenge was to envision an application that could scale to meet the needs of 31,000 retail locations, each with its unique inventory needs.
@@ -421,11 +428,12 @@
                       </p>
                     </div>
                     <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                    <br>
                   </div>
                   
 
-                    <br>
-                    <div class="project-description">
+
+                    <div class="project-description web-development">
                         <h4>Agreement Periods Admin Project</h4>
                         <p>As a Full-stack C# Developer at BYU Campus Accommodations in Provo, UT I enabled the transition of systems from Visual Basic to a modern tech stack involving ASP.NET, Entity Framework, and Oracle SQL.  <i>This helped drive $40 Million dollars in annual revenue collected by Campus Accommodations.</i></p>
                         <div class="more-text">
@@ -433,10 +441,11 @@
                             <p>The main project I worked on as part of this as a solo developer was an app in which I developed a web application for admin use, demonstrated in the video above.  This project comprised over 6000 lines of code.</p>
                         </div>
                         <button onclick="toggleReadMore(this)" class="read-more-btn">See More</button>
-                    </div>
+                        <br>
+                      </div>
 
-                    <br>
-                    <div class="project-description">
+
+                    <div class="project-description data-analytics cybersecurity web-development">
                         <h4>INTEX 2023</h4>
                         <p  style="text-align:center;"><a href="docs/4-13 (6).pdf">Our full report</a> | <a href="https://github.com/SinistralMars/Fag_el-Gamous">Link to our code repository</a></p>
                         <p>Our team successfully conducted an in-depth statistical analysis of Ancient Egyptian gravesite data, employing advanced analytical techniques to derive valuable insights.</p>
@@ -449,10 +458,11 @@
                         <p>INTEX 2023 showcased our ability to leverage cutting-edge technologies, including .NET programming, PostgreSQL, Amazon Web Services, and data visualization tools. Our achievements in this project stand as a testament to our expertise in data analytics, web development, and technical problem-solving.</p>
                         </div>
                         <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
-                    </div>
+                        <br>
+                      </div>
 
-                    <br>
-                    <div class="project-description">
+
+                    <div class="project-description web-development">
                           <h4>INTEX 2022</h4>
                           <p  style="text-align:center;"><a href="docs\Intex'22 Report.pdf">Our full report</a> | <a href="https://github.com/nbain00/kidneyproject">Link to our code repository</a></p>
                           <p>Was part of a team in which we designed a relational database, deployed it using Django and PostgreSQL, and visualized the data dynamically on a webpage to help kidney patients track health information.</p>
@@ -460,10 +470,10 @@
                           <p style="text-align:center;"><img src = "images/Daily Food Journal.png" alt = "website view" position="justify-content-center"><img src = "images/Screenshot_20230221_121913.png" alt = "website view" position="justify-content-center" width="400px"></p>
                       </div>
                       <button onclick="toggleReadMore(this)" class="read-more-btn">See More</button>
-
+                      <br>
                     </div>
 
-                    <br>
+
                     <div class="project-description">
 
                       <h4>SAnD 2022 (Systems Analysis and Design)</h4>
@@ -474,11 +484,11 @@
                         <iframe width="560" height="315" src="https://youtube.com/embed/AF0qntQA6X4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
-
+                    <br>
                     </div>
 
-                    <br>
-                    <div class="project-description">
+
+                    <div class="project-description web-development">
                         <h4>Principles of Business Programming- Final Project</h4>
                         <p  style="text-align:center;"><a href="https://github.com/nbain00/IS403-project">Source Code for our web app on GitHub</a></p>
                         <p>For our final project we built a website that implemented CRUD (create, read, update, and delete) operations on a PostgreSQL database deployed to railway. The website was built using Python/Django along with HTML/CSS.  This project required knowledge of principles of both front-end and back-end development.  Our project recieved the highest grade in the class!</p>
@@ -487,18 +497,19 @@
                         <iframe width="560" height="315" src="https://youtube.com/embed/xoGh4w64Lbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                       </div>
                       <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
+                      <br>
                     </div>
-                    <div class="project-description">
+
+                    <div class="project-description data-analytics">
                       <h4>Tableau Data Analysis</h4>
                       <p  style="text-align:center;"><a href="./html/Tableau.html">Link to the Tableau Analysis</a></p>
-                      <p>An early work of Data Analysis I did for an introductory class.</p>
+                      <p>An early work of Data Analysis I did for an introductory (200-level) class.</p>
                       <div class="more-text">
                         <p>This demonstrates an emphasis on visualizing data so it can be better understood and used to make decisions.</p>
                     </div>
                     <button onclick="toggleReadMore(this)" class="read-more-btn">Read More</button>
                   </div>
-
-                    <br>
+                  <br>
                     <p class="CenteredText"><a href="#top">Return to Top</a></p>
                 </div>
             </div>
