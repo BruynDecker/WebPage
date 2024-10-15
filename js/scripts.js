@@ -4,9 +4,14 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-clean-blog/blob/master/LICENSE)
 */
 
-function filterProjects(category) {
+//This just filters the projects based on the category selected
+function filterProjects(category, button) {
     const projects = document.querySelectorAll('.project-description');
 
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    button.classList.add('active');
+    
     projects.forEach(project => {
         if (category === 'all') {
             project.style.display = 'block';

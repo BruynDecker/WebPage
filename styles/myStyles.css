@@ -1,3 +1,4 @@
+/*This gets me the cool gold borders on my projects */
 .project-description {
     border: 2px solid var(--jet);
     border-radius: 14px;
@@ -8,6 +9,7 @@
     border: 2px solid var(--vegas-gold);
 }
 
+
 /*This is for my filter buttons */
 
 .filter-buttons {
@@ -15,6 +17,12 @@
     justify-content: center; /* Centers the buttons horizontally */
     gap: 10px; /* Adds space between the buttons */
     margin-bottom: 20px;
+}
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .filter-buttons {
+        flex-direction: column; /* Stacks buttons vertically */
+        gap: 0; /* Removes space between buttons */
+    }
 }
 .filter-btn {
     background-color: var(--light-gray-70);
@@ -29,6 +37,13 @@
 .filter-btn:hover {
     background-color: var(--vegas-gold);
 }
+
+.filter-btn.active {
+    background-color: var(--jet); /* Highlights the active button */
+    color: white;
+    pointer-events: none; /* Makes the active button unclickable */
+}
+
 /*This is for my read less and more divs */
 
 .more-text {
