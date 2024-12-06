@@ -1,0 +1,181 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #fafafa;
+    margin: 0;
+    background: #121212;
+}
+
+header {
+    background: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    color: #fafafa;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #1f1f1f;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #64ffda;
+}
+
+.hero {
+    background: url('https://cdn.shopify.com/s/files/1/0605/9828/8499/files/who-created-the-image-of-jesus-2.webp') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,0.5); /* Dark overlay to ensure text stands out */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative; /* Ensures text is above the overlay */
+    z-index: 1;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    border-bottom: 2px solid #64ffda;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    font-weight: 600;
+}
+
+.highlight-box {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.highlight-box h3 {
+    margin-top: 0;
+    color: #64ffda;
+    font-weight: 600;
+}
+
+.highlight-box p {
+    line-height: 1.6;
+    color: #fafafa;
+}
+
+.subheading {
+    font-weight: 600;
+    color: #64ffda;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-post h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #64ffda;
+    font-weight: 600;
+}
+
+.blog-post p {
+    margin: 5px 0;
+    color: #fafafa;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #fafafa;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    background: #1e1e1e;
+    color: #fafafa;
+    border-radius: 3px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #64ffda;
+}
+
+.contact-form input[type="submit"] {
+    background: #64ffda;
+    color: #121212;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background: #52e7c4;
+}
+
+footer {
+    background: #1f1f1f;
+    color: #fafafa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Responsive adjustments */
+@media(max-width:600px) {
+    .hero h1 {
+        font-size: 1.8em;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
